@@ -34,7 +34,7 @@
 
 需要更改权限，原来是没有权限读的，`chmod +r`即可。
 
-### level 5
+## level 5
 
 关卡在$HOME/level/5。
 
