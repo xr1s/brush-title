@@ -1,0 +1,6 @@
+# Training: Crypto - Substitution I
+
+EA QTI GONXSTQA SVM AVL CGP BIGM QTXR NA FBXIPM X GN XNZBIRRIM WIBA DIOO MVPI AVLB RVOLQXVP HIA XR BGPVCZXVZCNC QTXR OXQQOI CTGOOIPSI DGR PVQ QVV TGBM DGR XQ
+
+标题表示我是简单替换密码，懒得词频分析，所以扔[quipqiup](http://quipqiup.com/)直接跑即可。
+

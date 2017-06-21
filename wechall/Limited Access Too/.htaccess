@@ -1,0 +1,8 @@
+AuthUserFile .htpasswd
+AuthGroupFile /dev/null
+AuthName "Authorization Required for the Limited Access Too Challenge"
+AuthType Basic
+<Limit GET POST HEAD PUT DELETE CONNECT OPTIONS>
+require valid-user
+</Limit>
+
