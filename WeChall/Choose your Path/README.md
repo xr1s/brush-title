@@ -2,7 +2,7 @@
 
 服务器上题目目录在/home/level/10
 
-题目给了个C文件，本以为是pwn题，结果是一道逻辑漏洞。还有一个可执行文件，一个sh大概是用来编译，一个solution.txt。查看权限，solution.txt主人是root，组属于level10，都只有读权限。
+题目给了个C文件，本以为是pwn题，结果是一shell注入。还有一个可执行文件，一个sh大概是用来编译，一个solution.txt。查看权限，solution.txt主人是root，组属于level10，都只有读权限。
 
 观察源码，使用了一个`popen`函数，查man手册
 

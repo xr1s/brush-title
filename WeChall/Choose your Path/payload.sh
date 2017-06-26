@@ -1,2 +1,2 @@
-./charp 'charp; cat solution.txt 1>&2'
+./charp '*; cat solution.txt 1>&2'
 
