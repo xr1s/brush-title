@@ -1,0 +1,2 @@
+username=' UNION SELECT 'abc', MD5('x')#
+password=x
