@@ -12,8 +12,10 @@ SELECT 1 UNION SELECT IF(0,1,(SELECT 1 UNION SELECT 2));  # 会报错
 这么个特性，但是让我不解的是
 
 ```sql
-SELECT 1 UNION SELECT IF(1,1,(SELECT 1, 2));  # 会报错
-SELECT 1 UNION SELECT IF(0,1,(SELECT 1, 2));  # 会报错
+SELECT 1, 2 UNION SELECT IF(1,1,(SELECT 1, 2));  # 会报错
+SELECT 1, 2 UNION SELECT IF(0,1,(SELECT 1, 2));  # 会报错
 ```
+
+还有几乎所有的报错注入都不行，只有前面那个可以。
 
 存疑。
