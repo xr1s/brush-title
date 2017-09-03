@@ -1,0 +1,28 @@
+require 'set'
+
+s = 'S22x10a31x12d12x14l43x15y10x15,37x15 43x10t27x15h34x16i40x11s40x13 22x16' \
+'i20x12s31x14 34x15n37x13o20x11t10x14 42x13t35x11h43x14e42x14 12x13m26x13e25x' \
+'11s36x13s12x16a43x13g15x15e37x11 16x13y34x10o41x10u25x12 25x16a12x12r20x15e4' \
+'1x16 15x12l10x12o16x10o17x12k42x16i12x15n37x14g10x16 40x15f12x10o40x16r34x14' \
+' 15x13:34x12(31x11 25x10T17x15r43x16y34x13 17x13f37x12u36x14r31x15t15x16h26x' \
+'12e37x16r26x14!17x10o40x12o15x11o11x13o15x10o31x13o25x13o36x15o34x11o25x15o3' \
+'1x16o28x10o35x12o27x11o15x14o35x13o31x10o37x10o28x16o20x14o17x14o40x10o12x11' \
+'o20x10o25x14o17x11o10x13o21x10o40x14o10x11o20x13o10x10o21x16o20x16o42x10o17x16'
+
+coor = Set::new s.scan(/.{6}/).collect do |block|
+  print block[0]
+  block[1..-1].split('x').map(&:to_i)
+end
+
+puts
+
+for i in 1..25 do
+  for j in 1..52 do
+    if coor.member? [j, i]
+      print '█'
+    else
+      print ' '
+    end
+  end
+  puts
+end
