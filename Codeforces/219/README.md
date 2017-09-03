@@ -1,6 +1,6 @@
 # Codeforces Round #135 (Div. 2)
 
-## Choosing Capital for Treeland
+## D. Choosing Capital for Treeland
 
 给出一棵有向树。问如何选树根，才能通过调整最小的边指向，使得树根能抵达所有节点。
 
