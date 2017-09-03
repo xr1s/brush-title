@@ -1,0 +1,3 @@
+# A Simple Problem with Integers
+
+线段树经典老题，区间更新，区间查询。注意`%I64d`...
