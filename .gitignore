@@ -6,3 +6,5 @@ __pycache__/*
 .idea
 CMakeLists.txt
 cmake-build-debug
+
+.gdb_history
