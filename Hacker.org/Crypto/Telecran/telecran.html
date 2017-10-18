@@ -1,0 +1,26 @@
+<canvas id="solution" width="570" height="30"></canvas>
+
+<img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wlu.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wlu.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wlu.gif"><img src="img/wlu.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wua.gif"><img src="img/wdk.gif"><img src="img/wro.gif"><img src="img/wro.gif"><img src="img/wua.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wdk.gif"><img src="img/wro.gif">
+
+<script>
+function basename(path) {
+    return path.replace(/.*\//, "");
+}
+
+(function(canvas) {
+    ctx = canvas.getContext("2d");
+    var x = 0, y = 0;
+    ctx.moveTo(x, y);
+    var img = document.getElementsByTagName("img");
+    [...img].forEach(function(elem) {
+        var base = basename(elem.src);
+        switch (base[1]) {
+          case 'u': ctx.lineTo(x, y -= 10); break;
+          case 'd': ctx.lineTo(x, y += 10); break;
+          case 'l': ctx.lineTo(x -= 10, y); break;
+          case 'r': ctx.lineTo(x += 10, y); break;
+        }
+    });
+    ctx.stroke();
+})(solution)
+</script>
